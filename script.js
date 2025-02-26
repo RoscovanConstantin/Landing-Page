@@ -4,7 +4,7 @@ const links = [
     {
         name: "Etch A Sketch",
         link: "https://woodenbrick1.github.io/Etch_A_Sketch/",
-        // image: 
+        image: "./images/etch-a-sketch.PNG"
     },
     {
         name: "Tic-Tac-Toe",
@@ -40,7 +40,17 @@ const links = [
     
 ]
 
+const renderLinks = () => {
 
+    for (const link of links) {
+        container.innerHTML += 
+        `<div class="link">
+            <a href="${link.link}">${link.name}</a>
+            <img src="${link.image}"></img>
+        </div>`
+    }
+    
+}
 window.addEventListener("DOMContentLoaded", () =>{
-
+ renderLinks();
 });
