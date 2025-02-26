@@ -9,32 +9,32 @@ const links = [
     {
         name: "Tic-Tac-Toe",
         link: "https://woodenbrick1.github.io/Tic-Tac-Toe/",
-        // image:
+        image: "/images/tic-tac-toe.PNG"
     },
     {
         name: "To Do List",
         link: "http://woodenbrick1.github.io/To-do-List/",
-        // image:
+        image: "./images/to-do-list.PNG"
     },
     {
         name: "Ice Cream",
         link: "https://woodenbrick1.github.io/Restaurant-Page/",
-        // image:
+        image: "./images/icecream.PNG"
     },
     {
         name: "Library",
         link: "https://woodenbrick1.github.io/Library/",
-        // image:
+        image: "./images/library/PNG"
     },
     {
         name: "Calculator",
         link: "https://woodenbrick1.github.io/Calculator/",
-        // image:
+        image: "./images/calculator.PNG"
     },
     {
         name: "Weather App",
         link: "https://woodenbrick1.github.io/Weather-App/",
-        // image:
+        image: "./images/weather.PNG"
     }
     
     
