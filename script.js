@@ -24,7 +24,7 @@ const links = [
     {
         name: "Library",
         link: "https://woodenbrick1.github.io/Library/",
-        image: "./images/library/PNG"
+        image: "./images/library.PNG"
     },
     {
         name: "Calculator",
@@ -45,8 +45,8 @@ const renderLinks = () => {
     for (const link of links) {
         container.innerHTML += 
         `<div class="link">
-            <a href="${link.link}">${link.name}</a>
-            <img src="${link.image}"></img>
+            <a href="${link.link}">${link.name}</a> 
+            <img src="${link.image}" class="linkImg"></img>
         </div>`
     }
     

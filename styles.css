@@ -20,3 +20,16 @@ h1 {
     
     background-color: #EBE5C2;
 }
+
+#links-container {
+    display: grid;
+
+    grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );;
+}
+.link {
+    margin: 10px;
+}
+.linkImg {
+    width: 500px;
+
+}
