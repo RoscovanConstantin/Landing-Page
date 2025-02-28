@@ -31,5 +31,7 @@ h1 {
 }
 .linkImg {
     width: 500px;
-
+    
+    border: 10px solid #d1cfc0;
+    border-radius: 50px;
 }
