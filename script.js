@@ -45,8 +45,9 @@ const renderLinks = () => {
     for (const link of links) {
         container.innerHTML += 
         `<div class="link">
-            <a href="${link.link}">${link.name}</a> 
-            <img src="${link.image}" class="linkImg"></img>
+            <a href="${link.link}"> 
+                <img src="${link.image}" class="linkImg"></img>
+            </a>
         </div>`
     }
     

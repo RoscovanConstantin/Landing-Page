@@ -20,11 +20,13 @@ h1 {
     
     background-color: #EBE5C2;
 }
-
 #links-container {
     display: grid;
 
     grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );;
+
+    justify-items: center;
+    align-items: center;
 }
 .link {
     margin: 10px;
