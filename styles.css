@@ -28,12 +28,26 @@ h1 {
     justify-items: center;
     align-items: center;
 }
+
 .link {
     margin: 10px;
+    position: relative;
+    top: 0;
+    
 }
+
 .linkImg {
     width: 500px;
     
     border: 10px solid #d1cfc0;
     border-radius: 50px;
+}
+
+.desc {
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    background-color: aqua;
+    width: 90%;
+    
 }
