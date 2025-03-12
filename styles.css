@@ -50,4 +50,14 @@ h1 {
     background-color: aqua;
     width: 90%;
     
+    display: none;
 }
+
+.visible {
+    display: block;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }

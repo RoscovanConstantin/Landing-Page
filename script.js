@@ -50,14 +50,55 @@ const links = [
 const renderLinks = () => {
 
     for (const link of links) {
-        container.innerHTML += 
-        `<div class="link">
-            <p class="desc">${link.description}</p>
-            <a href="${link.link}"> 
-                <img src="${link.image}" class="linkImg"></img>
-            </a>
-            <div class="descBtn"></div>
-        </div>`
+     
+        const linkDiv = document.createElement('div');
+        linkDiv.classList.add('link');
+
+
+        const desc = document.createElement('p');
+        desc.classList.add('desc');
+        desc.textContent = link.description;  
+
+   
+        const a = document.createElement('a');
+        a.href = link.link;  
+
+       
+        const img = document.createElement('img');
+        img.src = link.image;  
+        img.classList.add('linkImg');
+
+        
+        a.appendChild(img);
+
+        const buttons = document.createElement('div');
+        buttons.classList.add('buttons');
+
+     
+        const buttonDesc = document.createElement('button');
+        buttonDesc.classList.add('descBtn');
+        buttonDesc.textContent = 'TEST';  
+
+        buttonDesc.addEventListener("click", () => {
+            desc.classList.add("visible");
+            a.classList.add("inactiveLink");
+        })
+
+        desc.addEventListener("click", () => {
+            if (desc.classList.contains("visible")) {
+
+                desc.classList.remove("visible");
+                a.classList.remove("inactiveLink");
+            }
+        })
+        buttons.appendChild(buttonDesc);
+
+        linkDiv.appendChild(desc);
+        linkDiv.appendChild(a);
+        linkDiv.appendChild(buttons);
+
+
+         container.appendChild(linkDiv);
     }
     
 }
