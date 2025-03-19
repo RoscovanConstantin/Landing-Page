@@ -47,12 +47,30 @@ h1 {
     position: absolute;
     top: 40px;
     left: 5%;
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 90%;
+    height: 80%;
+    padding: 30px;
     
+    font-size: 1.5rem;
+
     display: none;
 }
 
+.descBtn {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    padding: 5px;
+
+    border-radius: 50%;
+}
+.descLogo {
+    width: 30px;
+}
 .visible {
     display: block;
 }

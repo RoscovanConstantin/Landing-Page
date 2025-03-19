@@ -64,33 +64,42 @@ const renderLinks = () => {
         a.href = link.link;  
 
        
-        const img = document.createElement('img');
+        const img = document.createElement("img");
         img.src = link.image;  
-        img.classList.add('linkImg');
+        img.classList.add("linkImg");
 
         
         a.appendChild(img);
 
-        const buttons = document.createElement('div');
-        buttons.classList.add('buttons');
+        const buttons = document.createElement("div");
+        buttons.classList.add("buttons");
 
      
-        const buttonDesc = document.createElement('button');
-        buttonDesc.classList.add('descBtn');
-        buttonDesc.textContent = 'TEST';  
+        const buttonDesc = document.createElement("button");
+        buttonDesc.classList.add("descBtn");
+        
+        const descLogo = document.createElement("img");
+        descLogo.classList.add("descLogo");
+        descLogo.src = "./images/notepad-icon.jpg";
 
         buttonDesc.addEventListener("click", () => {
-            desc.classList.add("visible");
-            a.classList.add("inactiveLink");
-        })
-
-        desc.addEventListener("click", () => {
-            if (desc.classList.contains("visible")) {
-
+            if (!desc.classList.contains("visible")) {
+                desc.classList.add("visible");
+                a.classList.add("inactiveLink");
+            }
+            else {
                 desc.classList.remove("visible");
                 a.classList.remove("inactiveLink");
             }
         })
+
+        desc.addEventListener("click", () => {
+            if (desc.classList.contains("visible")) {
+                desc.classList.remove("visible");
+                a.classList.remove("inactiveLink");
+            }
+        })
+        buttonDesc.appendChild(descLogo);
         buttons.appendChild(buttonDesc);
 
         linkDiv.appendChild(desc);
