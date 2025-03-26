@@ -71,10 +71,16 @@ h1 {
     cursor: pointer;
 }
 
-.descLogo, .gitLogo {
-    width: 30px;
-    height: 30px;
+.descBtn:hover, .gitBtn:hover {
+    background-color: rgba(167, 167, 167, 1);
 }
+.descLogo, .gitLogo {
+    width: 40px;
+    height: 40px;
+
+    z-index: 2;
+}
+
 
 .visible {
     display: block;
