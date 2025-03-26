@@ -11,7 +11,7 @@ const links = [
     {
         name: "Tic-Tac-Toe",
         link: "https://woodenbrick1.github.io/Tic-Tac-Toe/",
-        image: "/images/tic-tac-toe.PNG",
+        image: "./images/tic-tac.PNG",
         description: "Tic Tac Toe, cmon you know how tic tac toe works.",
         git: "https://github.com/WoodenBrick1/Tic-Tac-Toe"
     },
