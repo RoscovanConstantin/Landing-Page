@@ -1,0 +1,11 @@
+
+#form {
+    background-color: rgb(218, 215, 180);
+
+    width: 60%;
+    height: 400px;
+    margin: 80px auto;
+
+    display: flex;
+    flex-direction: column;
+}
