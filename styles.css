@@ -1,3 +1,12 @@
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 4rem;
+    color: #4A3F35; /* Noua culoare */
+    border: 3px solid #6b695e; /* Bordură adăugată */
+    padding: 10px;
+    border-radius: 10px;
+}
 
 #links-container {
     display: grid;
@@ -29,7 +38,6 @@
     display: none;
 }
 
-
 .buttons {
     position: absolute;
     bottom: 10%;
@@ -54,13 +62,12 @@
 .descBtn:hover, .gitBtn:hover {
     background-color: rgb(153, 153, 153);
 }
+
 .descLogo, .gitLogo {
     width: 40px;
     height: 40px;
-
     z-index: 2;
 }
-
 
 .visible {
     display: block;
