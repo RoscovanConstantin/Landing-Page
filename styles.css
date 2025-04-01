@@ -2,10 +2,35 @@ h1 {
     margin-top: 10px;
     text-align: center;
     font-size: 4rem;
-    color: #4A3F35; /* Noua culoare */
-    border: 3px solid #6b695e; /* Bordură adăugată */
+    color: #4A3F35;
+    border: 3px solid #6b695e;
     padding: 10px;
     border-radius: 10px;
+}
+
+body {
+    background-color: #F8F3D9;
+}
+
+#head-links a {
+    text-decoration: none;
+    color: #6b695e;
+}
+
+#head-links a:hover {
+    color: #2c2b27;
+}
+
+#head-links a:active {
+    color: #777474;
+}
+
+#head-links a:nth-child(1) {
+    color: #4A3F35;
+}
+
+#head-links a:nth-child(2) {
+    color: #2c3e50;
 }
 
 #links-container {
@@ -43,7 +68,7 @@ h1 {
     bottom: 10%;
     right: 10%;
     display: flex;
-    gap: 10px; 
+    gap: 10px;
     align-items: center;
 }
 
@@ -51,8 +76,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;  
-    height: 50px; 
+    width: 50px;
+    height: 50px;
     border: none;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
