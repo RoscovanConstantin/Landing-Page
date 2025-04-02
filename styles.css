@@ -16,14 +16,6 @@ body {
     color: #777474;
 }
 
-#head-links a:nth-child(1) {
-    color: #4A3F35;
-}
-
-#head-links a:nth-child(2) {
-    color: #2c3e50;
-}
-
 #links-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
